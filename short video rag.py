@@ -18,8 +18,8 @@ documents = loader.load()
 
 # 分块
 text_splitter = RecursiveCharacterTextSplitter(
-    chunck_size = 50
-    chunck_overlap = 0
+    chunck_size = 50,
+    chunck_overlap = 0,
     separators=["\n\n","\n","。","!","?"]
 )
 splits = text_splitter.split_documents(documents)
